@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Draw App</title>
-  <link rel="stylesheet" href="master.css" />
+  <link rel="stylesheet" href="assets/css/master.css" />
 </head>
 <body style='margin: 0'>
     <div id="toolbar">
@@ -23,9 +23,11 @@
       </canvas>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="main.js"></script>
-    <script src="radius.js"></script>
-    <script src="colors.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+
+    <script src="assets/js/client.js"></script>
+    <script src="assets/js/radius.js"></script>
+    <script src="assets/js/colors.js"></script>
     <script>
     $("#canvas").outerHeight($(window).height()-$("#canvas").offset().top- Math.abs($("#canvas").outerHeight(true) - $("#canvas").outerHeight()));
     $(window).on("resize", function(){

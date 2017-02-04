@@ -22,6 +22,9 @@ function setSwatch(e){
   var swatch = e.target;
   // set colors
   setColor(swatch.style.backgroundColor);
+  mouse.color = swatch.style.backgroundColor;
+  console.log('color.value from color.js: '+ mouse.color);
+  console.log('swatch.style.backgroundColor from color.js'+swatch.style.backgroundColor);
   // give active class
   swatch.className += ' active';
 }
