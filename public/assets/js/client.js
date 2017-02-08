@@ -51,6 +51,7 @@ var context = canvas.getContext('2d');
         console.log('color from server: '+ color);
         console.log("data from server: " + JSON.stringify(data));
 
+        // draw the lines sent from server onto the canvas
         context.fillStyle = color;
         context.beginPath();
         context.moveTo(line[0].x * width, line[0].y * height);
@@ -59,7 +60,6 @@ var context = canvas.getContext('2d');
         context.stroke();
         context.arc(line[0].x * width, line[0].y * height, radius, 0, Math.PI*2);
         context.fill();
-
     });
 
     // main loop, running every 25ms
